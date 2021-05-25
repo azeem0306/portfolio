@@ -82,16 +82,16 @@ img {
     }
 }
 
-span:after {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    // background: #fff;
-    z-index: 1;
-    transform-origin: 100% 0;
-}
+// span:after {
+//     content: ' ';
+//     position: absolute;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     // background: #fff;
+//     z-index: 1;
+//     transform-origin: 100% 0;
+// }
 
 .project {
     background-color: $project-bg-color;
