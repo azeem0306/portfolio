@@ -61,9 +61,11 @@ img {
         align-items: center;
         justify-content: left;
         margin-top: 30px;
+        // padding: 0 20px;
 
         img {
             width: 50%;
+            padding-left: 50px;
         }
 
         h1 {
@@ -104,6 +106,7 @@ img {
     }
 
     h1 {
+        padding: 20px 0;
         color: $light-color;
     }
 
@@ -131,6 +134,7 @@ img {
         }
 
         &-title {
+            display: block !important;
 
 
             h4{
@@ -189,7 +193,7 @@ img {
             display: none;
         }
         &:hover &-title{
-            display: none;
+            display: none !important;
         }
     }
 
