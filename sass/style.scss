@@ -130,6 +130,30 @@ img {
             height: 100%;
         }
 
+        &-title {
+
+
+            h4{
+                // font-size: small;
+                justify-content: center;
+                align-items: center;
+                margin: 20px;
+                padding: 10px 0;
+                
+            }
+
+            p {
+                padding: 20px;
+                margin: 10px;
+                width: 200px;
+                justify-content: center;
+
+
+            }
+
+
+            
+        }
         &-info {
             display: none !important;
 
