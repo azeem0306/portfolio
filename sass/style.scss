@@ -1,0 +1,176 @@
+@import 'config';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $light-color;
+    font-family: $font-stack;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+    font-family: 'Niconne', cursive;
+    font-size: 50px;
+}
+
+.showcase {
+    @include set-background($primary-color);
+    height: 900px ;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            list-style: none;
+            
+        }
+
+        li {
+            padding: 15px;
+        }
+        
+        a {
+            color: set-text-color($primary-color);
+        }
+
+        a:hover {
+            color: $secondary-color;
+        }
+
+    }
+
+    &-content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-top: 30px;
+
+        img {
+            width: 50%;
+        }
+
+        h1 {
+            font-size: 50px;
+            line-height: 1.2;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+        span {
+            display: block;
+        }
+        
+        
+    }
+}
+
+span:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background: #fff;
+    z-index: 1;
+    transform-origin: 100% 0;
+}
+
+.project {
+    background-color: $project-bg-color;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    h1 {
+        color: $light-color;
+    }
+
+    h4 {
+        color: $light-color;
+    }
+
+    &-content {
+        height: 600px;
+        width: 100%;
+
+    }
+
+    &-card {
+        height: 300px;
+        width: 200px;
+        background-color: $primary-color;
+        // background-color: lighten($project-bg-color, 15%);
+        margin: 20px 20px;
+        display: block !important;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &-info {
+            display: none !important;
+
+            h4{
+                // font-size: small;
+                justify-content: center;
+                align-items: center;
+                margin: 20px;
+                padding: 10px 0;
+                
+            }
+
+            p {
+                padding: 20px;
+                margin: 10px;
+                width: 200px;
+                justify-content: center;
+
+
+            }
+
+
+            
+        }
+
+        &:hover &-info{
+            width: 600px;
+            display: block !important;
+
+        }
+        
+        &:hover img{
+            display: none;
+        }
+        &:hover &-title{
+            display: none;
+        }
+    }
+
+}
+
+@import 'utilities';
+@import 'buttons';
+@import 'mobile';
